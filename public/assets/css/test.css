@@ -1,0 +1,147 @@
+
+
+.package{
+  display: flex;
+  padding: 0 5%;
+  margin-bottom: 20px;
+}
+
+.package:hover .package-main{
+  background-color: rgba(91,57,128,0.8);
+  color: #fff;
+}
+.package:hover .package-main, .package:hover .package-main h3{
+  color: #fff;
+}
+
+
+.package-main{
+  width: 30%;
+  background: rgba(91,57,128,0.1);
+  color: #5b3980;
+  padding: 25px 25px;
+}
+.package-main h3{
+  color: #5b3980;
+
+}
+
+.package-main button{
+  margin-top: 20px;
+    background-color: #5b3980;
+    padding: 5px 7px;
+    color: #fff;
+
+}
+
+.package-papps{
+  width: 70%;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.package-module{
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+}
+.package-module:hover{
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.package-module img{
+  margin-right: 20px;
+}
+
+.package-module  div h5{
+  margin: 0;
+}
+
+
+/* responsive-package */
+@media only screen and (max-width: 780px) {
+  .package{
+    display: block;
+  }
+
+  .package-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .package-module{
+    padding: 0;
+
+  }
+
+  .package-main, .package-papps{
+    width: 100%;
+  }
+
+}
+
+
+@media only screen and (max-width: 465px) {
+  .package-module div h5{
+    font-size: 15px;
+  }
+
+  .package-main{
+    display: block;
+  }
+  
+  .package-module div div{
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+  }
+  .package-papps{
+    padding: 0; 
+    margin-top: 10px;
+  }
+
+}
+
+/* form-info-company */
+.form-infoCpn,.table-module{
+  padding: 0 5%;
+}
+
+.form-infoCpn div label{
+  font-size: 19px;
+  margin: 12px 0;
+  font-weight: 600;
+}
+
+.col2{
+  display: flex;
+  justify-content: space-between;
+}
+
+.col2 div{
+  width: 48%;
+}
+
+.col2 button{
+  margin-top: 37px;
+  color: #fff;
+  background-color: #7aa127;
+}
+
+.user-img{
+  height: 38px;
+  width: 38px !important;
+  border-radius: 50%;
+  cursor: pointer;
+}
+@media only screen and (max-width: 750px) {
+
+  .custom-style-api div table tbody tr {
+    display: block;
+  }
+}

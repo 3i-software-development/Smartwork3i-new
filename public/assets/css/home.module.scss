@@ -1,0 +1,48 @@
+.mainMenucontainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap !important;
+    width: 100%;
+    justify-content: center;
+    gap :2%;
+}
+.itemmainMenu{
+    width: 23%;
+    min-width: 120px;
+    
+}
+.itemMenudiv{
+     width: 100%;
+     height: 100%;
+     transition: 0.5s;
+     padding: 35px 30px 15px;
+     border: 1px solid rgba(0, 102, 255, 0.1);
+     box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     img{
+        height: 150px;
+        max-width: 80%;
+        width: auto !important;
+    
+     }
+}
+.mapImg{
+    width: 100% !important;
+    height: auto !important;
+}
+@media only screen and (max-width: 1000px) {
+    .itemmainMenu{
+        width: 45%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .itemMenudiv{
+        padding: 15px;
+        h5{
+            font-size: 12px;
+        }
+    }
+}

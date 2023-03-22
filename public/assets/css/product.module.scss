@@ -1,0 +1,241 @@
+.bannerImg {
+    height: 60vw !important;
+}
+
+.container {
+    width: 100%;
+
+    // padding: 0 15%;
+    h3 {
+        font-size: 30px;
+        text-align: center;
+        // margin : 3vw 0;
+    }
+}
+
+.h3 {
+    margin-top: 2vw;
+}
+
+.listContent {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 100px 0 50px 0;
+
+    // gap: 10px;
+    .itemContent {
+        width: 100%;
+        position: relative;
+        padding: 30px;
+        padding-top: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        // border: 0.5px solid rgb(151, 149, 149,0.5);
+        border-radius: 10px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        transition: 0.3s;
+        // background-color:rgb(135, 167, 82);
+
+
+        height: 100%;
+
+        .imgContent {
+            top: -50px;
+            font-size: 100px;
+            transition: 0.3s;
+            position: absolute;
+
+        }
+
+        .textContent {
+            h4 {
+                font-size: 20px;
+                font-weight: bold;
+                // color: white;
+                text-align: center;
+                transition: 0.3s;
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+
+    }
+
+    .itemContent:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+        .imgContent {
+            color: rgb(118, 148, 66);
+        }
+
+        h4 {
+            color: rgb(119, 150, 66);
+        }
+    }
+}
+
+.rev {
+    flex-direction: row-reverse;
+}
+
+.why-container {
+    // background-image: linear-gradient(45deg,rgb(83, 183, 0,0.4),rgb(0, 193, 191,0.4));
+    background-color: rgb(234, 236, 234);
+    width: 100%;
+    padding: 2% 15%;
+    position: relative;
+
+}
+
+.itemContainer {
+    width: 23%;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+    hr {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+.productMain {
+    h2 {
+        font-size: 20px;
+        text-align: center;
+        padding-bottom: 10px;
+        border-bottom: 3px solid gray;
+        margin-bottom: 10px;
+    }
+
+    .itemContent {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        padding: 1.5vw 10%;
+
+        .imgContent {
+            margin-top: 5%;
+            height: auto !important;
+
+        }
+    }
+
+    .listP {
+        padding:2%;
+    }
+
+    .pItem {
+        svg {
+            color: orangered;
+            margin-right: 5px;
+            font-size: 25px;
+        }
+    }
+}
+.itemIMG{
+    width: auto !important;
+}
+.div-problem {
+    display: flex;
+    padding: 2% 10%;
+    // flex-wrap: wrap;
+    align-items: center;
+
+    img {
+        width: 40%;
+        height: auto;
+    }
+}
+
+.list-problem {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    flex: 1;
+    margin-top: 2vw;
+}
+
+.item-problem {
+    overflow: hidden;
+    h6 {
+        color: white;
+        padding: 10px 20px;
+        margin-bottom: 0;
+    }
+
+    svg {
+        color: red;
+        margin-right: 5px;
+    }
+
+    p {
+        margin-bottom: 0;
+        padding: 10px 20px;
+    }
+
+    border-radius: 10px;
+
+}
+
+.it0 {
+    h6 {
+        background-color: #53b700;
+    }
+
+    margin-left: 10%;
+    border: 1px solid #53b700;
+}
+
+.it1 {
+    h6 {
+        background-color: #009cb7;
+    }
+
+    margin-right: 5%;
+    margin-left: 5%;
+    border: 1px solid #009cb7;
+}
+
+.it2 {
+    h6 {
+        background-color: #6947e4;
+    }
+
+    margin-right: 10%;
+    border: 1px solid #6947e4;
+}
+
+.img-dg{
+    width: 60%;
+    height: auto;
+    margin: 2vw auto;
+    display: block;
+}
+.icon-down{
+      font-size: 80px;
+      color: #53b700;
+      position: absolute;
+      top:-50px;
+      animation: down 1s infinite;
+      left: 50%;
+      transform: translate(-50%, 0);
+
+
+}
+@keyframes down {
+    0%{
+        top:-50px;
+    }
+    100%{
+        top:-20px;
+    }
+}

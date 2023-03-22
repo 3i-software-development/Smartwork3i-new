@@ -1,0 +1,87 @@
+.footer{
+    width: 100%;
+    background-color: azure;
+    padding: 2% 15%;
+}
+.footer-main{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.infor{
+    .logo-3i{
+        height: auto !important;
+    }
+    .infor-main{
+        padding: 12px;
+        p,h6,div{
+            margin-bottom: 10px;
+        }
+    }
+}
+.list-social{
+    display: flex;
+    gap: 10px;
+    a{
+        display: flex;
+        width: 40px;
+        height: 40px;
+        background-color: white;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        transition: 0.3s;
+    }
+    .fa-social{
+        color: dodgerblue;
+    }
+    .in-social{
+        color: darkblue;
+    }
+    .yt-social{
+        color: red;
+    }
+    .link-fa:hover{
+      background-color: dodgerblue;
+      .fa-social{
+        color:white;
+      }
+    }
+    .link-in:hover{
+        background-color: darkblue;
+        .in-social{
+          color:white;
+        }
+      }
+    .link-yt:hover{
+        background-color: red;
+        .yt-social{
+          color:white;
+        }
+      }
+}
+
+.list-link{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: fit-content;
+    padding-left: 5%;
+    width: 100%;
+    p{
+        width: 50%;
+        height: fit-content;
+        margin-bottom: 20px;
+        svg{
+            color: chartreuse;
+        }
+    }
+}
+.copy{
+    text-align: center;
+    margin-top: 20px;
+}
