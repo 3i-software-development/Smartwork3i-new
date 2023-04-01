@@ -134,6 +134,35 @@ height: 100%;
     width:  100%;
     }
 
+//dowload
+.dow-container{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top :100px;
+    right: 10px;
+    z-index: 3;
+    text-shadow: 2px 2px 8px white;
+    padding: 5px;
+    background: linear-gradient(to right,rgba(252, 250, 250, 0),rgba(255, 255, 255, 0.2),rgba(255, 255, 255, 0.5));
+    a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .icon1{
+        font-size: 50px;
+        color:dodgerblue;
+    }
+    .icon2{
+        font-size: 50px;
+        color:brown;
+    }
+    
+    
+}
+
 //responsive
 @media only screen and (max-width: 1500px) {
     .user-menu{

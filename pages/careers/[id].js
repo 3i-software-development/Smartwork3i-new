@@ -1,8 +1,17 @@
-import React from 'react'
+import React from 'react';
+import { useRouter } from "next/router";
+import { GetAPost } from '../api/CallAPI';
+import Content from '@/component/Content.js/Content';
 
 const Careers = () => {
+
+  const router = useRouter();
+  const getPost = GetAPost(router.query.id);
+
   return (
-    <div>Careers</div>
+    <div>
+      {getPost.data && <Content data={getPost.data} />} 
+    </div>
   )
 }
 

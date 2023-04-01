@@ -43,7 +43,9 @@ export default function App({ Component, pageProps }) {
         }}
       >
         <Layout>
+          <div className="container-page">
           <Component {...pageProps} />
+          </div>
         </Layout>
       </AppContext.Provider>
     </QueryClientProvider>

@@ -105,6 +105,9 @@ a {
   color: inherit;
   text-decoration: none;
 }
+button,a{
+  cursor: pointer;
+}
 
 @media (prefers-color-scheme: dark) {
   html {
@@ -122,5 +125,43 @@ a {
 @media only screen and (max-width: 1300px) {
   *{
     font-size: 12px;
+  }
+}
+.container-page{
+  width: 100%;
+  min-height: 80vh;
+}
+.mobile-hide{
+  display: block;
+}
+.mobile-show-block{
+  display: none;
+}
+figcaption{
+  text-align: center;
+}
+tr{
+  display: flex;
+}
+td{
+ width: 50%;
+ display: flex;
+ flex-direction: column;
+ padding: 20px;
+ 
+}
+
+@media only screen and (max-width: 750px) {
+  .mobile-hide{
+    display: none;
+  }
+  .mobile-show-block{
+    display: block;
+  }
+  tr{
+    flex-direction: column;
+  }
+  td{
+    width: 100% !important;
   }
 }

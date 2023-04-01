@@ -1,11 +1,13 @@
 //problem
-.problem-container{
+.problem-container {
     padding: 5% 0;
 }
-.title{
+
+.title {
     color: green;
     text-align: center;
 }
+
 .div-problem {
     display: flex;
     padding: 2% 10%;
@@ -28,6 +30,7 @@
 
 .item-problem {
     overflow: hidden;
+
     h3 {
         color: white;
         padding: 10px 20px;
@@ -86,32 +89,382 @@
     position: relative;
 
 }
-.icon-down{
+
+.icon-down {
     font-size: 80px;
     color: #53b700;
     position: absolute;
-    top:-50px;
+    top: -50px;
     animation: down 1s infinite;
     left: 50%;
     transform: translate(-50%, 0);
 }
+
 @keyframes down {
-    0%{
-        top:-50px;
+    0% {
+        top: -50px;
     }
-    100%{
-        top:-20px;
+
+    100% {
+        top: -20px;
     }
 }
-.listContent{
+
+.list-why {
     display: flex;
     padding: 5% 0;
-    justify-content: space-between;
+    gap: 2.5%;
+    justify-content: center;
 }
-.itemContainer{
+
+.item-why {
     width: 23%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    .text-why {
+        h4 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        p {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+    }
+}
+
+//forminfor
+.form-container-bg {
+    width: 100%;
+    padding: 2%;
+    background-image: linear-gradient(45deg, rgb(83, 183, 0), rgb(0, 193, 191));
+}
+
+.form-container {
+    width: 100%;
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    background-size: cover;
+
+    svg {
+        margin-right: 5px;
+        color: dodgerblue;
+    }
+
+    .text-intro {
+        width: 30%;
+        flex: 1;
+        padding: 3%;
+        color: white;
+
+        h2 {
+            font-size: 35px;
+            color: white;
+            margin-bottom: 30px;
+
+        }
+
+        //    button{
+        //     background: none;
+        //     border: 1px solid white;
+        //     padding: 10px 20px;
+        //     border-radius: 30px;
+        //     color:white;
+        //    }
+        .list-filedoc{
+            color: white;
+            padding-top: 50px;
+            p{
+                margin-bottom: 10px;
+            }
+            a{
+                padding: 10px 15px;
+                margin-top: 2px;
+                border: 1px solid white;
+                border-radius: 10px;
+                display: block;
+                text-align: center;
+            }
+            svg{
+                margin-right: 10px;
+                color: white;
+                font-size: 20px;
+            }
+            a:hover{
+                background-color: white;
+                color: green;
+                svg{
+                    color: green;
+                }
+            }
+        }
+    }
+
+}
+
+.form-main {
+    width: 50%;
+    padding: 30px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+
+    label {
+        font-weight: 500;
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .item-full {
+        width: 100% !important;
+    }
+
+    .item-form {
+        width: 47%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+
+        input {
+            width: 100%;
+            padding: 10px 15px;
+            border: 0.5px solid rgb(120, 119, 122, 0.5);
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 10px;
+        }
+
+        span {
+            color: red;
+        }
+
+        input::placeholder {
+            font-size: 13px;
+        }
+    }
+
+    .item-file {
+        width: 47%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+
+        span {
+            font-size: 13px;
+        }
+
+        .label-file {
+            padding: 10px 20px;
+            width: 100%;
+            border: 0.5px dotted rgb(120, 119, 122, 0.5);
+            border-radius: 10px;
+            color: gray;
+            background-color: rgb(128, 128, 128, 0.3);
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            justify-content: center;
+            margin: 10px 0;
+
+            svg {
+                font-size: 30px;
+                color: gray;
+            }
+        }
+
+        input {
+            display: none !important;
+        }
+
+        a {
+            color: cornflowerblue;
+            font-size: 13px;
+            font-style: italic;
+
+            span {
+                border-bottom: 0.5px solid cornflowerblue;
+            }
+        }
+    }
+
+    .item-note {
+        width: 100%;
+        margin-bottom: 20px;
+
+        textarea {
+            width: 100%;
+            padding: 10px 15px;
+            border: 0.5px solid rgb(120, 119, 122, 0.5);
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 10px;
+        }
+    }
+
+    h6 {
+        width: 100%;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    button {
+        background-color: dodgerblue;
+        color: white;
+        border-radius: 7px;
+        padding: 10px 20px;
+        margin: 0 auto;
+        border: none;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .form-main {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .form-container {
+        flex-direction: column;
+        align-items: center;
+
+        .text-intro {
+            width: 100%;
+        }
+
+        .form-main {
+            width: 80%;
+        }
+
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .item-file {
+        width: 100% !important;
+    }
+
+    .item-form {
+        width: 100% !important;
+    }
+
+    .form-main {
+        width: 100% !important;
+    }
+
+    .text-h2 {
+        font-size: 20px !important;
+    }
+
+    .form-main {
+        h6 {
+            font-size: 20px;
+        }
+    }
+}
+
+//list
+.list-container {
+    padding: 2% 15%;
+}
+
+.list-doc {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4% 0;
+    justify-content: space-between;
+}
+
+.item-doc {
+    width: 45%;
+    padding: 50px 0;
+
+    h4 {
+        text-align: center;
+    }
+
+    .list-item {
+        padding: 10px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .doc {
+            width: 48%;
+            display: flex;
+            padding: 15px;
+            margin: 5px 0;
+            border: 0.5px solid white;
+            border-radius: 5px;
+            cursor: pointer;
+
+            img {
+                margin-right: 10px;
+            }
+        }
+
+        .doc:hover {
+            border: 0.5px solid rgba(171, 173, 171, 0.4);
+            border-bottom: 1.5px solid green;
+        }
+    }
+}
+//linkdow
+.content-dowload{
+    position: fixed;
+    top:100px;
+    left: 0;
+    width:100%;
+    height: 90vh;
+    background-color: white;
+    padding: 10%;
+    overflow: scroll;
+}
+
+//introduce
+.introduce {
+    padding: 2% 15%;
+}
+
+.intro-main {
+    display: flex;
+    padding: 2% 0;
+    gap: 5%;
+    // align-items: center;
+    p {
+        width: 50%;
+        border-bottom: 1px dotted rgb(160, 157, 157);
+        height: fit-content;
+        text-align: justify;
+        text-justify: inter-word;
+        padding-bottom: 40px;
+    }
+
+    img {
+        width: 30% !important;
+        height: auto !important;
+    }
+}
+
+//diagram
+.diagram{
+    padding: 5% 0;
+    img{
+        display: block;
+        width: 70% !important;
+        height: auto !important;
+        margin: 0 auto;
+    }
 }

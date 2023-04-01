@@ -18,8 +18,18 @@ export const ListMenu = [
         children:[
            {
             img:`/assets/images/3i/icon-header/logoSW2.png`,
-            id:``,
+            id:`smartwork`,
             title:`HỆ ĐIỀU HÀNH DOANH NGHIỆP SMARTWORK`   
+           },
+           {
+            img:`/assets/images/3i/icon-header/he-thong-quan-ly.jpg`,
+            id:`vicem`,
+            title:`Hệ thống quản lý thị trường Vicem`   
+           },
+           {
+            img:`/assets/images/3i/icon-header/4222002.png`,
+            id:`acb`,
+            title:`Hệ thống quản lý kho, chứng từ và số hóa ACB`   
            },
            {
             img:`/assets/images/3i/icon-header/he-thong-quan-ly.jpg`,
@@ -31,11 +41,12 @@ export const ListMenu = [
             id:`2708`,
             title:`Hệ thống quản lý công văn và văn bản EDMS`   
            },
+        //    {
+        //     img:`/assets/images/3i/icon-header/4222002.png`,
+        //     id:`2709`,
+        //     title:`Hệ thống quản lý kho, chứng từ và số hóa`   
+        //    },
            {
-            img:`/assets/images/3i/icon-header/4222002.png`,
-            id:`2709`,
-            title:`Hệ thống quản lý kho, chứng từ và số hóa`   
-           },{
             img:`/assets/images/3i/icon-header/6600563.png`,
             id:`2710`,
             title:`Hệ thống quản lý giáo dục thông minh Smart education`   
@@ -98,46 +109,46 @@ export const ListMenu = [
         children:[
             {
              img:`/assets/images/3i/icon-header/asp.jfif`,
-             id:`378`,
+             id:`2727`,
              title:`ASP.NET`   
             },
             {
              img:`/assets/images/3i/icon-header/raw.png`,
-             id:`379`,
+             id:`2738`,
              title:`PHP`   
             },
             {
              img:`/assets/images/3i/icon-header/430-4309640_js-logo-nodejs-logo-clipart.png`,
-             id:`380`,
+             id:`2740`,
              title:`NodeJS`   
             },
             {
              img:`/assets/images/3i/icon-header/communityIcon_qomtlzo996u61.jpg`,
-             id:`381`,
+             id:`2736`,
              title:`Ionic`   
             },{
              img:`/assets/images/3i/icon-header/sql-1024x572.jpg`,
-             id:`384`,
+             id:`2737`,
              title:`Ứng dụng vè CSDL và Bigdata`   
             },
             {
              img:`/assets/images/3i/icon-header/2091665.png`,
-             id:`385`,
+             id:`2752`,
              title:`Phát triển của Blockchain`   
             },
             {
              img:`/assets/images/3i/icon-header/gg.png`,
-             id:`386`,
+             id:`2763`,
              title:`Kiến thức quy trình Test Phần mềm`   
             },
             {
              img:`/assets/images/3i/icon-header/226777.png`,
-             id:`388`,
+             id:`2743`,
              title:`JAVA`   
             },
             {
                 img:`/assets/images/3i/icon-header/6091352.png`,
-                id:`389`,
+                id:`2746`,
                 title:`IOT`   
                },
          ]
@@ -229,11 +240,6 @@ export const SmartworkIntro = [
         title:'Nâng cao năng suất',
         content:'Với SmartWork bạn có thể tạo ra các quy trình làm việc, giao việc và theo dõi tiến độ công việc , báo cáo thống kê về năng suất làm việc của từng thành viên trong nhóm để đánh giá hiệu quả công việc của họ.'
     },
-    // {
-    //     img:"/assets/Slide/3.png",
-    //     title:'Tính bảo mật cao',
-    //     content:'SmartWork được xây dựng với các công nghệ bảo mật hiện đại, giúp đảm bảo an toàn và bảo mật thông tin doanh nghiệp của bạn. Bạn có thể yên tâm sử dụng phần mềm mà không lo lắng về vấn đề bảo mật.'
-    // },
     {
         img:"/assets/listicon/telephone-call.png",
         title:'Hỗ trợ 24/7',
@@ -243,13 +249,9 @@ export const SmartworkIntro = [
         img:"/assets/listicon/dollar.png",
         title:'Tiết kiệm chi phí',
         content:'Tiết kiệm chi phí cho doanh nghiệp khi chỉ cần sử dụng một sản phẩm để quản lý nhiều phần khác nhau. Đồng thời, giá thành của SmartWork cũng rất cạnh tranh so với các phần mềm quản lý khác trên thị trường.'
-    },
-    // {
-    //     img:MdOutlineBuild,
-    //     title:'Luôn cải tiến và nâng cấp để đáp ứng nhu cầu kinh doanh',
-    //     content:'Liên tục cập nhật và tích hợp những tính năng mới, phù hợp với xu hướng và yêu cầu thị trường để mang lại trải nghiệm tốt nhất cho người dùng. Với SmartWork, người dùng không cần lo lắng về việc sản phẩm sẽ bị lỗi thời hay không còn phù hợp với nhu cầu kinh doanh của mình, vì sản phẩm này luôn được cập nhật để đáp ứng nhu cầu thay đổi của khách hàng.'
-    // }
+    }
 ]
+
 
 export const ListSmartwork = [
     {
@@ -376,4 +378,112 @@ export const ListSmartwork = [
         ]
 
     }
+]
+
+export const ListDowload = [
+    {
+        title:'Hệ thống quản lí doanh nghiệp Smartwork',
+        list:[{
+            icon:'/assets/listicon/ph2.png',
+            title:'Điều hành việc',
+            file:['/assets/dowload/Dieuhanhviec_khosohoa.pptx']
+        },
+        {
+            icon:'/assets/listicon/ph11.png',
+            title:'Quản lý nhân sự',
+            file:['/assets/dowload/Nhansu.pptx']
+        },
+        {
+            icon:'/assets/listicon/ph3.png',
+            title:'Quản lý tài sản',
+            file:['/assets/dowload/QLTS.pptx']
+        },
+        {
+            icon:'/assets/listicon/ph4.png',
+            title:'Kho và bán hàng',
+            file:[
+                '/assets/dowload/Kho_banhang1.pptx',
+                '/assets/dowload/Kho_banhang2.pptx'
+            ]
+        },
+        {
+            icon:'/assets/listicon/ph5.png',
+            title:'Tài sản và vận hành',
+            file:['/assets/dowload/Taisan.pptx']
+        },
+        {
+            icon:'/assets/listicon/ph6.png',
+            title:'Hợp đồng và đơn hàng',
+            file:['/assets/dowload/Hopdongdonhang.pptx']
+        },
+        {
+            icon:'/assets/listicon/ph7.png',
+            title:'Quản trị nhà cung cấp',
+            file:['/assets/dowload/Nhacungcap.pptx']
+        },
+        {
+            icon:'/assets/listicon/ph8.png',
+            title:'Quản trị khách hàng',
+            file:['/assets/dowload/Khachhang.pptx']
+        },
+        {
+            icon:'/assets/listicon/ph9.png',
+            title:'Quản trị tài chính',
+            file:['/assets/dowload/Taichinh.pptx']
+        },
+        {
+            icon:'/assets/listicon/ph1.png',
+            title:'Quản trị hệ thống',
+            file:['/assets/dowload/Quantrihethong.pptx']
+        },
+        {
+            icon:'/assets/listicon/ph10.png',
+            title:'Đào tạo nội bộ',
+            file:['/assets/dowload/Daotaonoibo.pptx']
+        }]
+    },
+    {
+        title:'Profile công ty',
+        list:[
+            {
+                icon:'/assets/listicon/ph6.png',
+                title:'Profile',
+                file:['/assets/dowload/Profile3i.pdf']
+            }
+        ]       
+    },
+    {
+        title:'Các sản phẩm khác',
+        list:[
+            {
+                icon:'/assets/listicon/vedan.png',
+                title:'Hệ thống quản lí xe cộ , vật tư , cư xá Vedan',
+                file:['/assets/dowload/Vedan.pptx']
+            },
+            {
+                icon:'/assets/listicon/travel.png',
+                title:'Smarttravel',
+                file:['/assets/dowload/Smarttravel.pptx']
+            },
+            {
+                icon:'/assets/listicon/crane.png',
+                title:'Romooc Tracking',
+                file:['/assets/dowload/Romooc.pptx']
+            },
+            {
+                icon:'/assets/listicon/hospital.png',
+                title:'Quản lí phòng khám',
+                file:['/assets/dowload/QLPK.pdf']
+            },
+            {
+                icon:'/assets/listicon/bank.png',
+                title:'RECONCILIATION, PACKAGE PRODUCT VIB',
+                file:['/assets/dowload/admin.pptx',
+                '/assets/dowload/banca.pptx',
+                '/assets/dowload/package.pptx',
+            ]
+            }
+        ]
+    }
+    
 ]
