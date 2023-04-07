@@ -1,14 +1,12 @@
 import React from 'react';
 import classNames from 'classnames/bind';
 import style from "./style.module.scss";
-import {BsFillCloudUploadFill} from 'react-icons/bs';
+import {BsFillCloudUploadFill,BsFillChatSquareTextFill,BsFiletypeDocx} from 'react-icons/bs';
 import {CgOrganisation} from 'react-icons/cg';
 import {MdMail} from 'react-icons/md';
 import {FaPhone,FaAddressBook} from 'react-icons/fa';
 import {ImUpload2} from 'react-icons/im';
-import {GiStabbedNote} from 'react-icons/gi';
 import Link from 'next/link';
-import {BsFiletypeDocx} from 'react-icons/bs';
 
 const cx = classNames.bind(style);
 
@@ -59,7 +57,9 @@ const FormInfo = ({title,data}) => {
                 <Link  href="/assets/images/3i/file/XD.05.docx" download ><span> Tải file mẫu: XD.05.docx</span></Link>
             </div>
             <div className={cx('item-note')}>
-                <label for='note'><GiStabbedNote/>Ghi chú</label>
+                <label for='note'>
+                    <BsFillChatSquareTextFill/>
+                    Ghi chú</label>
                 <textarea rows={2}/>
             </div>
             <button type='submit'>Nhận tư vấn</button>

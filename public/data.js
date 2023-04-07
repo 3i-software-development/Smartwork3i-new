@@ -19,7 +19,7 @@ export const ListMenu = [
            {
             img:`/assets/images/3i/icon-header/logoSW2.png`,
             id:`smartwork`,
-            title:`HỆ ĐIỀU HÀNH DOANH NGHIỆP SMARTWORK`   
+            title:`Hệ điều hành doanh nghiệp SMARTWORK`   
            },
            {
             img:`/assets/images/3i/icon-header/he-thong-quan-ly.jpg`,
@@ -65,41 +65,41 @@ export const ListMenu = [
             {
              img:`/assets/images/3i/icon-header/2154319.png`,
              id:`2712`,
-             title:`PHÁT TRIỂN PHẦN MỀM QUỐC TẾ`   
+             title:`Phát triển phần mềm quốc tế`   
             },
             {
              img:`/assets/images/3i/icon-header/phat-trien-pm-tuybien.png`,
              id:`2714`,
-             title:`PHÁT TRIỂN PHẦN MỀM TÙY BIẾN`   
+             title:`Phát triển phần mềm tùy biến`   
             },
             {
              img:`/assets/images/3i/icon-header/3347960.png`,
              id:`2715`,
-             title:`DỊCH VỤ PHẦN MỀM OUTSOURCE`   
+             title:`Dịch vụ phần mềm Outsource`   
             },
             {
              img:`/assets/images/3i/icon-header/1311450.png`,
              id:`2716`,
-             title:`PHÁT TRIỂN SẢN PHẨM PHẦN MỀM`   
+             title:`Phát triển sản phẩm phần mềm`   
             },{
              img:`/assets/images/3i/icon-header/1197511.png`,
              id:`2717`,
-             title:`PHÁT TRIỂN ỨNG DỤNG WEB`   
+             title:`Phát triển ứng dụng Web`   
             },
             {
              img:`/assets/images/3i/icon-header/dichuyen-csdl.jpg`,
              id:`2718`,
-             title:`DỊCH VỤ DI CHUYỂN CSDL`   
+             title:`Dịch vụ di chuyển CSDL`   
             },
             {
              img:`/assets/images/3i/icon-header/3289961.png`,
              id:`2719`,
-             title:`PHÁT TRIỂN ỨNG DỤNG DI ĐỘNG`   
+             title:`Phát triển ứng dụng di động`   
             },
             {
              img:`/assets/images/3i/icon-header/7187399.png`,
              id:`2720`,
-             title:`KIỂM THỬ PHẦN MỀM QUỐC TẾ`   
+             title:`Kiểm thử phần mềm quốc tế`   
             }
          ]
     },
@@ -198,7 +198,7 @@ export const ListMenu = [
             {
              img:`/assets/images/3i/icon-header/9194815.png`,
              id:`2730`,
-             title:`GIỚI THIỆU`   
+             title:`Giới thiệu`   
             }
          ]
     },

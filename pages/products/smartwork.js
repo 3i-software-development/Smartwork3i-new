@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 import Banner from '@/component/Banner/Banner';
 import style from "@/views/Products/style.module.scss";

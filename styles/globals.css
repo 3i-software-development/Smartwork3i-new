@@ -86,8 +86,6 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  font-family: 'Montserrat', sans-serif;
-
 }
 
 /* body {
@@ -115,9 +113,9 @@ button,a{
   }
 }
 *{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif !important;
 }
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1520px) {
   *{
     font-size: 14px;
   }
