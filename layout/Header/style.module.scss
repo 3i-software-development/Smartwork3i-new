@@ -63,6 +63,9 @@
     }
 }
 
+.icon-down{
+    margin-left: 5px;
+}
 //user
 .user-container{
     display: flex;
@@ -100,7 +103,14 @@
     display: none;
 }
 .mb-icon{
-    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    gap:3px;
+    div{
+        height: 1px;
+        width: 15px;
+        background-color: black;
+    }
     cursor: pointer;
 }
 .act{

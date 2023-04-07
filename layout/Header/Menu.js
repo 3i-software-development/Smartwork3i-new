@@ -4,8 +4,7 @@ import Image from "next/image";
 import style from "./style.module.scss";
 import { ListMenu } from "@/public/data";
 import Link from "next/link";
-import { MdOutlineKeyboardArrowDown } from "react-icons/md";
-import { FiMenu } from "react-icons/fi";
+import DownIcon from '@/public/assets/listicon/down.png'
 
 const cx = classNames.bind(style);
 
@@ -17,7 +16,7 @@ const Menu = () => {
           <div className={cx("dropdown")} key={i}>
             <div className={cx("menuHeader")}>
               {d.title}
-              <MdOutlineKeyboardArrowDown />
+              <Image src={DownIcon} alt='down' width='10' height='10' className={cx('icon-down')}/>
             </div>
             <div className={cx("menu-hover")}>
               {d.children.map((item, index) => (
@@ -54,17 +53,20 @@ export default Menu;
 
 export const MenuMobile = () => {
   const [show, setshow] = useState('');
-  const [actMobile, setactMobile] = useState([0, 0, 0, 0, 0, 0, 0]);
+  const [actMobile, setactMobile] = useState(0);
   const showMenu = (i) => {
     setactMobile(
-      actMobile.map((item, index) => (index == i && actMobile[i] == 0 ? 1 : 0))
+      actMobile == i ? -1 : i
     );
-    console.log("sds", actMobile);
   };
 
   return (
     <div className={cx("mb-container")}>
-      <FiMenu className={cx("mb-icon")} onClick={() => setshow(show==''?'act':'')} />
+      <div className={cx("mb-icon")} onClick={() => setshow(show==''?'act':'')}>
+        <div/>
+        <div/>
+        <div/>
+        </div> 
      
         <div className={cx("menu-mb-container",show)}>
           {ListMenu.map((d, i) =>
@@ -75,9 +77,9 @@ export const MenuMobile = () => {
                   onClick={() => showMenu(i)}
                 >
                   {d.title}
-                  <MdOutlineKeyboardArrowDown />
+                  <Image src={DownIcon} alt='down' width='10' height='10' className={cx('icon-down')}/>
                 </div>
-                {actMobile[i] == 1 ? (
+                {actMobile == i ? (
                   <div className={cx("menu-hover-mb")}>
                     {d.children.map((item, index) => (
                       <Link
